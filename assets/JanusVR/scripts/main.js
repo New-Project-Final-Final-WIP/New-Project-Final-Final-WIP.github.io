@@ -6,8 +6,8 @@ room.onLoad = function()
 }
 room.update = function(dt)
 {
-	look_at_player(room.objects["3DCursorImg"])
-	viewDistScale(room.objects["3DCursorImg"])
+/*	look_at_player(room.objects["3DCursorImg"])
+	viewDistScale(room.objects["3DCursorImg"])*/
 }
 
 function look_at_player(obj) {
