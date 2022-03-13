@@ -72,7 +72,7 @@ function init() {
 	
 	let shard1 = new THREE.Mesh(shard1Geometry, shard1Material);
 	let shard2 = new THREE.Mesh(shard2Geometry, shard2Material);
-	var shard3 = new THREE.Mesh(shard3Geometry, shard3Material);
+	let shard3 = new THREE.Mesh(shard3Geometry, shard3Material);
 
 	shard1.position.x = 0.438;
 	shard1.position.z = 0.08;
@@ -98,8 +98,9 @@ function init() {
 	window.addEventListener( 'resize', onWindowResize );
 }
 
+const timeOffset = Date.now();
 function animation(time) {
-
+    time = time + timeOffset;
 	sigil.rotation.x = time / 2000 + degToRad(90);
 	sigil.rotation.y = time / 1000;
 	renderer.render(scene, camera);
