@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 let camera, scene, renderer;
 let sigil;
 

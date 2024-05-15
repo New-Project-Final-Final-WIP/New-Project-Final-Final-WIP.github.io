@@ -5,15 +5,23 @@
 		<title>New Webpage</title>
 		<link rel="shortcut icon" href="assets/images/logo.png" id="favicon">
 		<style>
-			body { margin: 0; }
+			body { margin: 0; background-color: #404040; }
 		</style>
 		<meta property="og:type" content="website"/>
 		<meta property="og:title" content="New Webpage"/>
 		<meta property="og:description" content="Home of New_Project_Final_Final_WIP"/>
 		<meta property="og:url" content="https://www.newweb.page/"/>
 		<meta property="og:image" content="https://www.newweb.page/assets/images/logo.png"/>
+
+		<script type="importmap">
+		  {
+		    "imports": {
+		      "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js"
+		    }
+		  }
+		</script>
 	</head>
-	<body style="background-color:#404040;">
+	<body>
 		<!-- TODO: Add light and link to bool.chat -->
 		<!--<FireBoxRoom>
 			<Assets>
@@ -30,8 +38,6 @@
 				<Image id="3DCursorImg" js_id="3DCursorImg" pos="0 -10 0" fwd="1 0 0" scale="0.025 0.025 0.025" lighting="false" draw_layer="-99" visible="false"></Image>
 			</Room>
 		</FireBoxRoom>-->
-		<script src="https://threejs.org/build/three.min.js"></script>
-		
-		<script src="assets/js/main.js"></script>
+		<script type="module" src="assets/js/main.js"></script>
 	</body>
 </html>
